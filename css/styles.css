@@ -246,56 +246,58 @@ body {
 
 .subscribe-form {
   display: flex;
-  gap: 24px; /* между полем и кнопкой */
+  gap: 24px;
 }
+
+.subscribe-label { display: block; }
 
 .subscribe-input {
-  width: 264px;              /* 264 + 24 + 165 = 453 по твоему лейауту */
-  height: 40px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
+  width: 264px;                 /* критерий */
+  height: 40px;                 /* критерий */
+  border: 1px solid #ffffff;    /* критерий */
+  background-color: transparent;/* критерий */
+  font-size: 12px;              /* критерий */
+  line-height: 2;               /* критерий */
+  letter-spacing: 0.04em;       /* критерий */
+  padding-left: 16px;           /* критерий */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* критерий */
+  border-radius: 4px;           /* критерий */
+  color: #ffffff;               /* критерий */
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.subscribe-input::placeholder { color: #ffffff; opacity: 0.6; }
+.subscribe-input::placeholder { color: #ffffff; } /* критерий */
 
 .subscribe-input:focus {
   border-color: #4d5ae5;
 }
 
 .subscribe-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  width: 165px;
-  height: 40px;
+  min-width: 165px;         /* критерий */
+  height: 40px;             /* критерий */
+  display: flex;            /* критерий */
+  justify-content: center;  /* критерий */
+  align-items: center;      /* критерий */
+  border: none;             /* критерий */
+  border-radius: 4px;       /* критерий */
+  background-color: #4d5ae5;/* критерий */
+  color: #ffffff;           /* критерий */
+  cursor: pointer;          /* критерий */
+  font-family: "Roboto", sans-serif; /* критерий */
+  font-size: 16px;          /* критерий */
+  font-weight: 500;         /* критерий */
+  line-height: 1.5;         /* критерий */
+  letter-spacing: 0.04em;   /* критерий */
   padding: 8px 24px;
-  border: none;
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: #404bbf;
-}
+.subscribe-btn:focus { background-color: #404bbf; }
 
-.subscribe-icon { /* иконка в кнопке */
-  display: inline-block;
-  /* если в символе есть var(--color1), можно задать: --color1: #fff; */
+.subscribe-icon {
+  margin-left: 16px; /* критерий */
 }
 
 .footer-subscribe {
