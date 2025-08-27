@@ -610,7 +610,9 @@ body {
 .modal-close:focus { border: none; background-color: #404bbf;}                       /* критерии */
 
 /* поля формы */
-.form-field {  margin-bottom: 8px; }                       /* критерий */
+.form-field {  margin-bottom: 8px; }  
+.form-field {  margin-bottom: 16px; }  
+.form-field {  margin-bottom: 24px; }            
 
 .input-wrap { position: relative; }
 
