@@ -602,14 +602,15 @@ body {
   background-color: transparent;
   display: flex; justify-content: center; align-items: center;
   cursor: pointer;
+  background-color: #e7e9fc; 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
               border 250ms cubic-bezier(0.4, 0, 0.2, 1);   /* критерий */
 }
 .modal-close:hover,
-.modal-close:focus { border: none; }                       /* критерии */
+.modal-close:focus { border: none; background-color: #404bbf;}                       /* критерии */
 
 /* поля формы */
-.form-field { margin-bottom: 16px; }                       /* критерий */
+.form-field {  margin-bottom: 8px; }                       /* критерий */
 
 .input-wrap { position: relative; }
 
@@ -666,13 +667,15 @@ body {
   font-size: 12px;            
   line-height: 14px;         
   letter-spacing: 0.04em;  
+  line-height: 1.17; 
+  color: #8e8f99;
 }
 .policy-link {
   white-space: nowrap;       
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;          
+  line-height: 1.17;           
   letter-spacing: 0.04em;
   text-decoration: underline;
   text-decoration-style: solid;
@@ -697,7 +700,7 @@ body {
 
 .checkbox-input:checked + .privacy-label .checkbox-custom {
   border: none;                                            /* критерий */
-  background-color: #4d5ae5;
+  background-color:#404bbf; 
   fill: var(--icon-checked, #f4f4fd);                      /* критерий */
 }
 .checkbox-input:checked + .privacy-label .checkbox-icon { opacity: 1; }
