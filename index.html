@@ -279,18 +279,18 @@
   </div>
 </footer>
 
-<!-- Backdrop + Modal -->
+<!-- Backdrop (скрыт по умолчанию) -->
 <div class="backdrop" data-modal>
   <div class="modal">
-<button type="button" class="modal-close" aria-label="Close modal" data-modal-close>
-  <svg class="modal-close-icon" width="8" height="8" aria-hidden="true">
-    <use href="./images/icons.svg#icon-close"></use>
-  </svg>
-</button>
+    <button type="button" class="modal-close" aria-label="Close modal" data-modal-close>
+      <svg class="modal-close-icon" width="8" height="8" aria-hidden="true">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
     <p class="modal-title">Leave your contacts and we will call you back</p>
 
-    <form class="modal-form" name="order-form" autocomplete="off" novalidate>
+    <form class="modal-form" name="service-form" autocomplete="off" novalidate>
       <!-- Name -->
       <div class="form-field">
         <label class="form-label" for="user-name">Name</label>
@@ -307,6 +307,7 @@
           </svg>
         </div>
       </div>
+
       <!-- Phone -->
       <div class="form-field">
         <label class="form-label" for="user-phone">Phone</label>
@@ -352,9 +353,8 @@
         ></textarea>
       </div>
 
-      <!-- Agreement -->
+      <!-- Privacy (checkbox) -->
       <div class="form-field">
-        <!-- Важна именно такая связка: input → label(for="user-privacy") -->
         <input
           class="checkbox-input visually-hidden"
           type="checkbox"
@@ -368,15 +368,16 @@
               <use href="./images/icons.svg#icon-vector"></use>
             </svg>
           </span>
-          I accept the terms and conditions of the&nbsp;
-          <a class="policy-link" href="#">Privacy Policy</a>
+            I accept the terms and conditions of the&nbsp;
+            <a class="policy-link" href="#">Privacy&nbsp;Policy</a>
         </label>
       </div>
 
-      <button type="submit" class="form-submit">Send</button>
+      <button type="submit" class="form-submit-btn">Send</button>
     </form>
   </div>
 </div>
+
 
 <!-- Мини-скрипт для открытия/закрытия -->
 <script>
