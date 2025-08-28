@@ -695,21 +695,20 @@ body {
 }
 
 .checkbox-custom {
-  display: inline-flex;                                    /* критерий */
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  background-color: transparent;
-  fill: transparent;                                       /* критерий */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);     /* критерий */
+  width: 16px;                         /* критерий */
+  height: 16px;                        /* критерий */
+  border: 1px solid rgba(46,47,66,0.4);/* критерий */
+  border-radius: 2px;                  /* критерий */
+  display: inline-flex;                /* критерий */
+  align-items: center;                 /* критерий */
+  justify-content: center;             /* критерий */
+  fill: transparent;                   /* критерий */
+  transition:                           /* критерий */
+    background-color 250ms cubic-bezier(0.4,0,0.2,1),
+    border 250ms cubic-bezier(0.4,0,0.2,1),
+    fill 250ms cubic-bezier(0.4,0,0.2,1);
 }
-.checkbox-icon { opacity: 0; } /* показываем галочку только когда checked */
+.checkbox-icon { opacity: 0; display: block;} /* показываем галочку только когда checked */
 
 .checkbox-input:checked + .privacy-label .checkbox-custom {
   border: none;                                            /* критерий */
