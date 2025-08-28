@@ -612,8 +612,7 @@ body {
 /* поля формы */
 
 .form-field{margin-bottom: 8px;}
-#phone-form{margin-bottom: 16px;}
-#email-form{margin-bottom: 24px;}
+#form-name{margin-bottom: 16px;}
 
 
 .input-wrap { position: relative; }
