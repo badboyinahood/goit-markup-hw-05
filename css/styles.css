@@ -612,8 +612,14 @@ body {
 
 /* поля формы */
 
-.form-field{margin-bottom: 8px;}
-#form-phone{margin-bottom: 16px;}
+/* Базовый отступ для всех блоков полей */
+.form-field { margin-bottom: 8px; }
+
+/* 16px для секции с textarea (Comment) */
+.form-field--md { margin-bottom: 16px; }
+
+/* 24px для секции с чекбоксом (Privacy) */
+.form-field--lg { margin-bottom: 24px; }
 
 
 .input-wrap { position: relative; }
@@ -644,7 +650,7 @@ body {
 
 .form-textarea {
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   resize: none;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -731,5 +737,3 @@ body {
 }
 .form-submit-btn:hover,
 .form-submit-btn:focus { background-color: #404bbf; }
-
-.span {display: inline-flex;}
