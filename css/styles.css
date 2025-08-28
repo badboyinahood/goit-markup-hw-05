@@ -613,7 +613,7 @@ body {
 /* поля формы */
 
 .form-field{margin-bottom: 8px;}
-#name-form{margin-bottom: 16px;}
+#form-phone{margin-bottom: 16px;}
 
 
 .input-wrap { position: relative; }
