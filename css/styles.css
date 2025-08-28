@@ -711,10 +711,6 @@ body {
 }
 .checkbox-icon { opacity: 0; } /* показываем галочку только когда checked */
 
-span.checkbox-custom { 
-  display: inline-flex; 
-}
-
 .checkbox-input:checked + .privacy-label .checkbox-custom {
   border: none;                                            /* критерий */
   background-color:  #404bbf;
