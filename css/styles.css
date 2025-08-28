@@ -377,7 +377,7 @@ body {
   margin-bottom: 16px;
 }
 
-.privacy-label { display: inline-flex; align-items: center; gap: 8px; }
+.privacy-label { align-items: center; gap: 8px; }
 
 .privacy-box {
   display: inline-flex; 
@@ -739,3 +739,5 @@ body {
 }
 .form-submit-btn:hover,
 .form-submit-btn:focus { background-color: #404bbf; }
+
+
